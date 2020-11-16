@@ -20,11 +20,11 @@ $(document).ready(function() {
   var url ='https://api.weatherstack.com/forecast?access_key=5bc82451636190abd9d7afe6fe9b20b5&query=39.742043,-104.991531&forecast_days=5&hourly=1&interval=3'; //Place your weatherstack API Call Here - access_key to be used: 5bc82451636190abd9d7afe6fe9b20b5
 
   $.ajax({url:url, dataType:"jsonp"}).then(function(data) {
-    console.log(data);//Review all of the data returned
-		console.log("Current Temp: " + data.current.temperature);//View Today's Temp
-    console.log("Future Forecast: " + data.forecast['2020-11-04'].maxtemp);//View Today's Temp
+    // console.log(data);//Review all of the data returned
+		// console.log("Current Temp: " + data.current.temperature);//View Today's Temp
+    // console.log("Future Forecast: " + data.forecast['2020-11-04'].maxtemp);//View Today's Temp
     var current_time = new Date(data.location.localtime);//Retrieve the current timestamp
-		console.log(current_time.getDay());
+		// console.log(current_time.getDay());
 
     /*
       Read the current weather information from the data point values [https://weatherstack.com/documentation] to
