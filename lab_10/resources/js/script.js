@@ -21,7 +21,7 @@ $(document).ready(function() {
 
   $.ajax({url:url, dataType:"jsonp"}).then(function(data) {
     console.log(data);//Review all of the data returned
-		console.log("Current Temp: " + data.current.temperature);//View Today's Temp
+		//console.log("Current Temp: " + data.current.temperature);//View Today's Temp
     console.log("Future Forecast: " + data.forecast['2020-11-04'].maxtemp);//View Today's Temp
     var current_time = new Date(data.location.localtime);//Retrieve the current timestamp
 		console.log(current_time.getDay());
